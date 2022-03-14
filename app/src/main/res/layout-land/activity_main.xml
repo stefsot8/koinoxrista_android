@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#cacecb">
+
+    <TableLayout
+        android:id="@+id/table"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="0,1">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="136dp"
+                android:layout_height="match_parent"
+                android:layout_column="0"
+                android:gravity="center"
+                android:text="ΔΙΑΜΕΡΙΣΜΑ"
+                android:textStyle="bold"
+                android:textSize="30dp"/>
+
+            <TextView
+                android:layout_width="97dp"
+                android:layout_height="match_parent"
+                android:layout_column="1"
+                android:gravity="center"
+                android:text="ΣΥΝΟΛΟ"
+                android:textStyle="bold"
+                android:textSize="30dp"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/n1"
+                android:layout_width="136dp"
+                android:layout_height="match_parent"
+                android:layout_column="0"
+                android:gravity="center"
+                android:text="ΛΙΟΥΡΑ"
+                android:textSize="25dp"/>
+
+            <TextView
+                android:id="@+id/p1"
+                android:layout_width="97dp"
+                android:layout_height="match_parent"
+                android:layout_column="1"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="25dp"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/n2"
+                android:layout_width="136dp"
+                android:layout_height="match_parent"
+                android:layout_column="0"
+                android:gravity="center"
+                android:text="ΣΩΤΗΡΙΟΥ"
+                android:textSize="25dp"/>
+
+            <TextView
+                android:id="@+id/p2"
+                android:layout_width="97dp"
+                android:layout_height="match_parent"
+                android:layout_column="1"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="25dp"/>
+
+        </TableRow>
+
+    </TableLayout>
+
+    <EditText
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="66dp"
+        android:layout_gravity="center"
+        android:hint="ΣΥΝΟΛΙΚΟ ΠΟΣΟ"
+        android:textSize="25dp"/>
+
+    <Button
+        android:id="@+id/calculate"
+        android:layout_width="210dp"
+        android:layout_height="84dp"
+        android:layout_gravity="center"
+        android:text="ΥΠΟΛΟΓΙΣΜΟΣ"
+        android:textSize="25dp" />
+
+</LinearLayout>
